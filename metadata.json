@@ -1,0 +1,6 @@
+{
+  "name": "Deja Doom: The Last Life",
+  "description": "A 3D Halloween psychological troll-platformer where the haunted house studies your habits, turns your corpses into physical Husks, and manipulates your interface.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

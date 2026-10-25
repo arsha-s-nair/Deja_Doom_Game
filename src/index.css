@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cinzel", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0b0a0d;
+    color: #ebe6dc;
+    font-family: var(--font-sans);
+    user-select: none;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle filmic vignette without backdrop-filter so WebGL stays 60fps */
+.horror-vignette {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(11, 10, 13, 0) 48%,
+    rgba(8, 7, 10, 0.52) 82%,
+    rgba(5, 4, 7, 0.88) 100%
+  );
+}
+
+.poker-vignette {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(88, 56, 145, 0) 45%,
+    rgba(76, 38, 135, 0.28) 80%,
+    rgba(46, 18, 88, 0.62) 100%
+  );
+}
+
+.title-scrim {
+  background: linear-gradient(
+    to right,
+    rgba(9, 8, 12, 0.9) 0%,
+    rgba(9, 8, 12, 0.56) 50%,
+    rgba(9, 8, 12, 0.26) 100%
+  );
+}
+
+
