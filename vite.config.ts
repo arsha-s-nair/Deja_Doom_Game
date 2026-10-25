@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base:'/Deja_Doom_Game/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
